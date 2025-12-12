@@ -4,7 +4,11 @@ const mongoose = require('mongoose');
 const mongodbURL = process.env.MONGODB;
 
 
-mongoose.connect(mongodbURL);
+mongoose.connect(mongodbURL,{
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+    tls: true,
+});
 
 const db = mongoose.connection;
 
