@@ -1,3 +1,4 @@
+require('dotenv').config();
 const express = require('express');
 const app = express();
 const db  = require('./db');
@@ -16,6 +17,6 @@ app.use("/person", personRoutes);
 app.use('/menu', menuRouter);
 
 
-app.listen(4000, () =>{
+app.listen(process.env.PORT, () =>{
     console.log("Server is listening on 4000 port");
 });
