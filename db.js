@@ -1,5 +1,3 @@
-// mongodb+srv://asifmhaldar84_db_user:Ugo99gVyeDDKjnEF@nodejs.ff751ld.mongodb.net/
-
 
 const mongoose = require('mongoose');
 
