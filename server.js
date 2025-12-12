@@ -18,5 +18,5 @@ app.use('/menu', menuRouter);
 
 
 app.listen(process.env.PORT, () =>{
-    console.log("Server is listening on 4000 port");
+    console.log("Server is listening on 3000 port");
 });
