@@ -10,7 +10,7 @@ const menuRouter = require('./Routes/MenuItem');
 app.use(bodyParser.json());
 
 app.get("/", (req, res) => {
-    res.send("Kasa ahes bhava");
+    res.send("Welcome to Our Hotel");
 });
 
 app.use("/person", personRoutes);
